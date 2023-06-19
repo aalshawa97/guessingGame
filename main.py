@@ -6,11 +6,14 @@ secret_number = 9
 guess_count = 0
 guess_limit = 3
 
+print('You have three guesses')
 while guess_count < guess_limit:
     guess = int(input('Guess: '))
     guess_count += 1
     if guess == secret_number:
         print('You won!')
+    elif guess_count ==  guess_limit:
+        print(f'You have exceeded the guesses limit {guess_limit}, could you please try again?')
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
