@@ -14,7 +14,7 @@ while guess_count < guess_limit:
         print('You won!')
     elif guess_count ==  guess_limit:
         print(f'You have exceeded the guesses limit {guess_limit}, could you please try again?')
-
+        print(f'The number was {secret_number}, Thanks!')
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
